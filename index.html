@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>The Wedding of Fadil & Hilma</title>
+<meta name="description" content="Undangan Pernikahan Digital Rangga & Salsabila">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Tailwind Config -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#FCF8F3',
+          beige: '#F4ECE2',
+          gold: '#C6A27A',
+          brown: '#4B3D33',
+          sage: '#A8B89A',
+        },
+        fontFamily: {
+          heading: ['"Cormorant Garamond"', 'serif'],
+          arabic: ['Amiri', 'serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+</head>
+
+<body class="font-body bg-cream text-brown overflow-x-hidden">
+
+<!-- ============================================ -->
+<!-- OPENING SCREEN -->
+<!-- ============================================ -->
+<div id="opening-screen" class="fixed inset-0 z-[100] flex items-center justify-center bg-gradient-to-b from-beige via-cream to-beige overflow-y-auto">
+  <!-- Ornamen -->
+  <div class="islamic-pattern-bg"></div>
+  <div class="absolute top-0 left-0 w-full h-24 opacity-20">
+    <svg viewBox="0 0 400 100" class="w-full h-full" preserveAspectRatio="none">
+      <path d="M0,50 Q100,0 200,50 T400,50" stroke="#C6A27A" stroke-width="1.5" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="relative z-10 w-full max-w-md mx-auto px-6 py-10 text-center flex flex-col items-center" data-aos="fade-in">
+
+    <p class="font-arabic text-2xl text-gold mb-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <p class="text-xs tracking-[0.3em] uppercase text-brown/60 mb-6">The Wedding Of</p>
+
+    <!-- Placeholder Karakter -->
+    <div class="relative mx-auto mb-6">
+      <img src="assets/images/6.png" alt="Placeholder Pengantin" class="w-full h-full object-cover p-2 ">
+    </div>
+
+    <h1 class="font-heading text-4xl sm:text-5xl text-brown leading-tight mb-2">
+      Hilma <span class="text-gold">&</span> Fadil
+    </h1>
+    <p class="text-sm tracking-widest text-brown/60 mb-8">Minggu, 11 Oktober 2026</p>
+
+
+    <button id="open-invitation-btn" class="group relative overflow-hidden bg-brown text-cream px-10 py-3.5 rounded-full font-body text-sm tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 active:scale-95">
+      <span class="relative z-10 flex items-center gap-2">
+        <i class="fa-solid fa-envelope-open-text"></i>
+        Buka Undangan
+      </span>
+    </button>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- MAIN CONTENT -->
+<!-- ============================================ -->
+<div id="main-content" class="hidden">
+
+  <!-- ============ NAVBAR DESKTOP ============ -->
+  <nav id="navbar" class="hidden md:flex fixed top-0 left-0 w-full z-40 justify-center transition-all duration-300">
+    <div class="glass-nav w-full max-w-3xl mx-auto mt-4 rounded-full px-8 py-3 flex items-center justify-between">
+      <span class="font-heading text-xl text-brown">R & S</span>
+      <div class="flex items-center gap-7 text-xs tracking-wider uppercase text-brown/70">
+        <a href="#hero" class="nav-link hover:text-gold transition">Home</a>
+        <a href="#mempelai" class="nav-link hover:text-gold transition">Mempelai</a>
+        <a href="#love-story" class="nav-link hover:text-gold transition">Love Story</a>
+        <a href="#acara" class="nav-link hover:text-gold transition">Acara</a>
+        <a href="#gift" class="nav-link hover:text-gold transition">Gift</a>
+        <a href="#rsvp" class="nav-link hover:text-gold transition">RSVP</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
+    <div class="islamic-pattern-bg"></div>
+    <div class="arch-ornament-top"></div>
+
+    <div class="relative z-10 max-w-md mx-auto text-center" data-animate="fade-up">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold mb-4">The Wedding Of</p>
+
+      <div class="relative mx-auto mb-6">
+        <img src="assets/images/6.png" alt="Placeholder Pengantin" class="w-full h-full object-cover p-2 ">
+      </div>
+
+      <h1 class="font-heading text-5xl sm:text-6xl text-brown mb-1">Hilma</h1>
+      <p class="font-arabic text-gold text-xl my-1">&</p>
+      <h1 class="font-heading text-5xl sm:text-6xl text-brown mb-6">Fadil</h1>
+
+      <div class="w-16 h-px bg-gold mx-auto mb-6"></div>
+
+      <p class="font-arabic text-lg leading-loose text-brown/80 mb-3">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+      </p>
+      <p class="text-xs leading-relaxed text-brown/60 italic px-2">
+        "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya..." (QS. Ar-Rum: 21)
+      </p>
+    </div>
+
+    <!-- Countdown -->
+    <div class="relative z-10 mt-10 w-full max-w-md mx-auto" data-animate="fade-up">
+      <p class="text-center text-xs tracking-widest uppercase text-brown/60 mb-4">Menuju Hari Bahagia</p>
+      <div id="countdown" class="grid grid-cols-4 gap-2 sm:gap-3">
+        <div class="countdown-box">
+          <span id="cd-days" class="font-heading text-2xl sm:text-3xl text-brown">00</span>
+          <span class="text-[10px] uppercase tracking-wider text-brown/50">Hari</span>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-hours" class="font-heading text-2xl sm:text-3xl text-brown">00</span>
+          <span class="text-[10px] uppercase tracking-wider text-brown/50">Jam</span>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-minutes" class="font-heading text-2xl sm:text-3xl text-brown">00</span>
+          <span class="text-[10px] uppercase tracking-wider text-brown/50">Menit</span>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-seconds" class="font-heading text-2xl sm:text-3xl text-brown">00</span>
+          <span class="text-[10px] uppercase tracking-wider text-brown/50">Detik</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-gold animate-bounce-slow">
+      <i class="fa-solid fa-chevron-down text-lg"></i>
+    </div>
+  </section>
+
+  <!-- ============ MEMPELAI ============ -->
+  <section id="mempelai" class="relative py-20 px-6 bg-beige/50">
+    <div class="islamic-pattern-bg opacity-50"></div>
+    <div class="relative z-10 max-w-md mx-auto text-center mb-12" data-animate="fade-up">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold mb-2">Assalamu'alaikum Wr. Wb.</p>
+      <p class="text-sm text-brown/60 mt-4 leading-relaxed">
+        Kami mengundang Bapak/Ibu/Saudara/I untuk menghadiri acara pernikahan kami.
+      </p>
+    </div>
+
+    <div class="relative z-10 max-w-md mx-auto space-y-8">
+            <!-- Wanita -->
+      <div class="profile-card" data-animate="fade-up">
+        <div class="w-32 h-32 mx-auto mb-4 relative">
+          <div class="absolute inset-0 rounded-full border border-gold/40"></div>
+          <img src="assets/images/5.png" alt="Mempelai Wanita" class="w-full h-full object-cover rounded-full p-1.5">
+        </div>
+        <h3 class="font-heading text-3xl text-brown mb-1">HILMA NUR’AINI, S.Pd</h3>
+        <p class="text-xs tracking-wider uppercase text-gold mb-3">Putri Ketiga</p>
+        <p class="text-sm text-brown/70 leading-relaxed">
+          Dari (Alm) Bapak Firman & Ibu Rostiawati 
+        </p>
+        <div class="flex justify-center gap-4 mt-4">
+          <a href="https://www.instagram.com/hilma.na?igsh=ZWh4c3A1M3Vwa2l2" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="flex items-center justify-center gap-3">
+        <span class="w-10 h-px bg-gold/50"></span>
+        <span class="font-arabic text-gold text-xl">&</span>
+        <span class="w-10 h-px bg-gold/50"></span>
+      </div>
+
+      <!-- Pria -->
+      <div class="profile-card" data-animate="fade-up">
+        <div class="w-32 h-32 mx-auto mb-4 relative">
+          <div class="absolute inset-0 rounded-full border border-gold/40"></div>
+          <img src="assets/images/4.png" alt="Mempelai Pria" class="w-full h-full object-cover rounded-full p-1.5">
+        </div>
+        <h3 class="font-heading text-3xl text-brown mb-1">FADIL MUHAMMAD YUNUS, A.Md.T</h3>
+        <p class="text-xs tracking-wider uppercase text-gold mb-3">Putra Kedua</p>
+        <p class="text-sm text-brown/70 leading-relaxed">
+          Dari Bapak Puguh Wahyu Widodo & (Almh) Ibu Diana Santika
+        </p>
+        <div class="flex justify-center gap-4 mt-4">
+          <a href="https://www.instagram.com/fadilyunus99?igsh=MWhmY3RxOXk0amIxZw==" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ LOVE STORY ============ -->
+  <section id="love-story" class="relative py-20 px-6">
+    <div class="relative z-10 max-w-md mx-auto text-center mb-12" data-animate="fade-up">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold mb-2">Perjalanan Kisah Kami</p>
+      <h2 class="font-heading text-4xl text-brown">Love Story</h2>
+    </div>
+
+    <div class="relative z-10 max-w-md mx-auto">
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-dot"><i class="fa-solid fa-heart text-[10px]"></i></div>
+          <div class="timeline-content">
+            <span class="text-xs uppercase tracking-wider text-gold">2004</span>
+            <h4 class="font-heading text-2xl text-brown mt-1 mb-2">Awal Cerita</h4>
+            <p class="text-sm text-brown/70 leading-relaxed">Berawal dari bangku dasar. Saling mengenal untuk membersamai dalam hal pertemanan. tidak memiliki rasa, hanya untuk belajar dan mengemban ilmu pendidikan. Waktu berlalu, kami menjalani kehidupan masing-masing tanpa ada komunikasi dan bertegur sapa. Hingga akhirnya takdir mempertemukan Kami kembali.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-dot"><i class="fa-solid fa-ring text-[10px]"></i></div>
+          <div class="timeline-content">
+            <span class="text-xs uppercase tracking-wider text-gold">2026</span>
+            <h4 class="font-heading text-2xl text-brown mt-1 mb-2">Lamaran</h4>
+            <p class="text-sm text-brown/70 leading-relaxed">Niat baik kami berlabuh pada momen lamaran yang sederhana namun penuh haru. Kami melangsungkan acara lamaran di bulan Juli 2026 lalu.</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-dot"><i class="fa-solid fa-mosque text-[10px]"></i></div>
+          <div class="timeline-content">
+            <span class="text-xs uppercase tracking-wider text-gold">2026</span>
+            <h4 class="font-heading text-2xl text-brown mt-1 mb-2">Pernikahan</h4>
+            <p class="text-sm text-brown/70 leading-relaxed">Dengan penuh rasa syukur dan kebahagiaan. InsyaAllah kami memilih untuk berlayar bersama dalam satu bahtera, menyusuri luasnya samudra kehidupan, melewati tenang dan gelombang, hingga kelak berlabuh di tujuan yang sama.
+Dengan segala cinta dan doa, kami akan mengikrarkan janji suci pernikahan, untuk menjadi teman dalam setiap pelayaran, dan rumah bagi satu sama lain, selamanya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACARA ============ -->
+  <section id="acara" class="relative py-20 px-6 bg-beige/50">
+    <div class="islamic-pattern-bg opacity-50"></div>
+    <div class="relative z-10 max-w-md mx-auto text-center mb-12" data-animate="fade-up">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold mb-2">Save The Date</p>
+      <h2 class="font-heading text-4xl text-brown">Rangkaian Acara</h2>
+    </div>
+
+    <div class="relative z-10 max-w-md mx-auto space-y-6">
+      <!-- Akad -->
+      <div class="event-card" data-animate="fade-up">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="icon-circle"><i class="fa-solid fa-book-quran"></i></div>
+          <h3 class="font-heading text-2xl text-brown">Akad Nikah</h3>
+        </div>
+        <div class="space-y-2 text-sm text-brown/70">
+          <p><i class="fa-regular fa-calendar w-5 text-gold"></i> Minggu, 11 Oktober 2026</p>
+          <p><i class="fa-regular fa-clock w-5 text-gold"></i> 08.30 WIB - Selesai </p>
+          <p><i class="fa-solid fa-location-dot w-5 text-gold"></i> Masjid Jami’ Al-Hikmah Yusuf Asy’ari</p>
+        </div>
+        <a href="https://maps.app.goo.gl/7cbydmX1qAeZtTBd6" target="_blank" class="btn-maps">
+          <i class="fa-solid fa-map-location-dot"></i> Lihat Lokasi
+        </a>
+      </div>
+
+      <!-- Resepsi -->
+      <div class="event-card" data-animate="fade-up">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="icon-circle"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <h3 class="font-heading text-2xl text-brown">Resepsi</h3>
+        </div>
+        <div class="space-y-2 text-sm text-brown/70">
+          <p><i class="fa-regular fa-calendar w-5 text-gold"></i> Minggu, 11 Oktober 2026</p>
+          <p><i class="fa-regular fa-clock w-5 text-gold"></i> 10.30 - 13.30 WIB</p>
+          <p><i class="fa-solid fa-location-dot w-5 text-gold"></i> Gor SDIT-SMPIT Al Hikmah Cipayung Jaya</p>
+        </div>
+        <a href="https://maps.app.goo.gl/7cbydmX1qAeZtTBd6" target="_blank" class="btn-maps">
+          <i class="fa-solid fa-map-location-dot"></i> Lihat Lokasi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WEDDING GIFT ============ -->
+  <section id="gift" class="relative py-20 px-6">
+    <div class="relative z-10 max-w-md mx-auto text-center mb-12" data-animate="fade-up">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold mb-2">Tanpa Mengurangi Rasa Hormat</p>
+      <h2 class="font-heading text-4xl text-brown">Wedding Gift</h2>
+      <p class="text-sm text-brown/60 mt-4 leading-relaxed">
+        Doa restu Anda adalah karunia terindah bagi kami. Namun jika berkenan memberikan tanda kasih, kami sediakan:
+      </p>
+    </div>
+
+    <div class="relative z-10 max-w-md mx-auto space-y-5">
+      <!-- Rekening -->
+      <div class="gift-card" data-animate="fade-up">
+        <div class="flex items-center gap-3 mb-3">
+          <i class="fa-solid fa-building-columns text-gold text-lg"></i>
+          <span class="text-sm font-medium tracking-wide">Bank BSI</span>
+        </div>
+        <p class="font-heading text-2xl text-brown tracking-wider mb-1">7200423911</p>
+        <p class="text-xs text-brown/60 mb-4">Hilma Nuraini</p>
+        <button class="btn-copy" data-copy="7200423911">
+          <i class="fa-regular fa-copy"></i> Salin Nomor Rekening
+        </button>
+      </div>
+
+      <div class="gift-card" data-animate="fade-up">
+        <div class="flex items-center gap-3 mb-3">
+          <i class="fa-solid fa-building-columns text-gold text-lg"></i>
+          <span class="text-sm font-medium tracking-wide">Bank CIMB Niaga</span>
+        </div>
+        <p class="font-heading text-2xl text-brown tracking-wider mb-1">707600944000</p>
+        <p class="text-xs text-brown/60 mb-4">Fadil Muhammad Yunus</p>
+        <button class="btn-copy" data-copy="707600944000">
+          <i class="fa-regular fa-copy"></i> Salin Nomor Rekening
+        </button>
+      </div>
+
+      
+  </section>
+
+  <!-- ============ RSVP ============ -->
+   <section id="rsvp" class="relative py-20 px-6 bg-beige/50">
+    <div class="islamic-pattern-bg opacity-50"></div>
+    <div class="relative z-10 max-w-md mx-auto text-center mb-12" data-animate="fade-up">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold mb-2">Konfirmasi Kehadiran</p>
+      <h2 class="font-heading text-4xl text-brown">RSVP</h2>
+      <p class="text-sm text-brown/60 mt-4">Mohon konfirmasi kehadiran Anda sebelum hari-H</p>
+    </div>
+ 
+    <form id="rsvp-form" class="relative z-10 max-w-md mx-auto glass-card rounded-2xl p-6 space-y-4" data-animate="fade-up">
+      <div>
+        <label class="form-label">Nama Lengkap</label>
+        <input type="text" name="nama" required class="form-input" placeholder="Masukkan nama Anda">
+      </div>
+      <div>
+        <label class="form-label">Konfirmasi Kehadiran</label>
+        <select name="kehadiran" required class="form-input">
+          <option value="">Pilih Konfirmasi</option>
+          <option value="Insya Allah Hadir">Insya Allah Hadir</option>
+          <option value="Tidak Bisa Hadir">Tidak Bisa Hadir</option>
+          <option value="Masih Ragu">Masih Ragu</option>
+        </select>
+      </div>
+      <div>
+        <label class="form-label">Jumlah Tamu</label>
+        <input type="number" name="jumlah" min="1" max="5" value="1" class="form-input">
+      </div>
+      <div>
+        <label class="form-label">Ucapan & Doa</label>
+        <textarea name="ucapan" rows="3" class="form-input resize-none" placeholder="Tuliskan ucapan dan doa terbaik Anda"></textarea>
+      </div>
+      <button type="submit" id="rsvp-submit-btn" class="w-full bg-brown text-cream py-3.5 rounded-full text-sm tracking-wide shadow-md hover:shadow-lg transition-all duration-300 active:scale-95">
+        <i class="fa-solid fa-paper-plane mr-2"></i> Kirim RSVP
+      </button>
+    </form>
+  </section>
+
+   <!-- ============ UCAPAN & DOA (SECTION BARU) ============ -->
+  <section id="ucapan" class="relative py-20 px-6">
+    <div class="islamic-pattern-bg opacity-50"></div>
+    <div class="relative z-10 max-w-md mx-auto text-center mb-10" data-animate="fade-up">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold mb-2">Doa Restu Dari Anda</p>
+      <h2 class="font-heading text-4xl text-brown">Ucapan & Doa</h2>
+      <p class="text-sm text-brown/60 mt-4">Kumpulan ucapan dan doa dari tamu yang telah mengisi RSVP</p>
+    </div>
+ 
+    <div class="relative z-10 max-w-md mx-auto" data-animate="fade-up">
+      <div id="wishes-list" class="space-y-3">
+        <p id="wishes-empty" class="text-center text-sm text-brown/40 italic py-6">Memuat ucapan...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PENUTUP ============ -->
+  <section id="penutup" class="relative py-24 px-6 text-center overflow-hidden">
+    <div class="islamic-pattern-bg"></div>
+    <div class="arch-ornament-bottom"></div>
+
+    <div class="relative z-10 max-w-md mx-auto" data-animate="fade-up">
+      <p class="font-arabic text-xl text-gold leading-loose mb-4">
+        بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+      </p>
+      <p class="text-xs text-brown/60 italic mb-8 px-4">
+        "Semoga Allah memberkahimu, dan semoga Allah melimpahkan keberkahan atasmu, serta menyatukan kalian berdua dalam kebaikan."
+      </p>
+
+      <div class="w-16 h-px bg-gold mx-auto mb-8"></div>
+
+      <h3 class="font-heading text-3xl text-brown mb-4">Terima Kasih</h3>
+      <p class="text-sm text-brown/70 leading-relaxed mb-10">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kami.
+      </p>
+
+      <p class="font-heading text-2xl text-brown mb-1">Wassalamu'alaikum Wr. Wb.</p>
+      <p class="font-heading text-3xl text-gold mt-4">Hilma & Fadil</p>
+
+      <p class="text-[11px] text-brown/40 mt-12">© 2026 Wedding Invitation. Made with <i class="fa-solid fa-heart text-gold"></i></p>
+    </div>
+  </section>
+
+  <!-- ============ BOTTOM NAVIGATION (MOBILE) ============ -->
+  <nav id="bottom-nav" class="md:hidden fixed bottom-0 left-0 w-full z-40">
+    <div class="glass-nav flex items-center justify-around px-2 py-2.5 mx-3 mb-3 rounded-2xl">
+      <a href="#hero" class="bottom-nav-item active" data-section="hero">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="#mempelai" class="bottom-nav-item" data-section="mempelai">
+        <i class="fa-solid fa-user-group"></i>
+        <span>Couple</span>
+      </a>
+      <a href="#acara" class="bottom-nav-item" data-section="acara">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span>Acara</span>
+      </a>
+      <a href="#gift" class="bottom-nav-item" data-section="gift">
+        <i class="fa-solid fa-gift"></i>
+        <span>Gift</span>
+      </a>
+      <a href="#rsvp" class="bottom-nav-item" data-section="rsvp">
+        <i class="fa-solid fa-envelope"></i>
+        <span>RSVP</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ FLOATING BUTTONS ============ -->
+  <div class="fixed right-4 bottom-24 md:bottom-8 z-40 flex flex-col gap-3">
+    <button id="scroll-top-btn" class="floating-btn opacity-0 pointer-events-none">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <a href="https://wa.me/6289506841426" target="_blank" class="floating-btn bg-sage">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <button id="music-toggle-btn" class="floating-btn">
+      <i class="fa-solid fa-music"></i>
+    </button>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bg-music" loop>
+    <source src="assets/music/backsound.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] opacity-0 pointer-events-none transition-all duration-300">
+    <div class="bg-brown text-cream px-6 py-3 rounded-full shadow-lg flex items-center gap-2 text-sm">
+      <i class="fa-solid fa-circle-check text-sage"></i>
+      <span id="toast-message">Berhasil!</span>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

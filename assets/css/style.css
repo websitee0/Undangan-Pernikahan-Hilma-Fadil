@@ -1,0 +1,491 @@
+/* ============================================
+   WEDDING INVITATION - CUSTOM STYLES
+   ============================================ */
+
+:root {
+  --cream: #FCF8F3;
+  --beige: #F4ECE2;
+  --gold: #C6A27A;
+  --brown: #4B3D33;
+  --sage: #A8B89A;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--cream);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--beige);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 10px;
+}
+
+/* ============================================
+   ISLAMIC PATTERN BACKGROUND (SVG, tipis)
+   ============================================ */
+.islamic-pattern-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.06;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23C6A27A' stroke-width='1'%3E%3Cpath d='M60 10 L100 40 L100 80 L60 110 L20 80 L20 40 Z'/%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Cpath d='M60 32 L60 88 M32 60 L88 60'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 160px 160px;
+  background-repeat: repeat;
+}
+
+.arch-ornament-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  height: 140px;
+  z-index: 0;
+  opacity: 0.15;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 50% 0%, transparent 55%, var(--gold) 56%, var(--gold) 57%, transparent 58%);
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+}
+
+.arch-ornament-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  width: 100%;
+  max-width: 480px;
+  height: 140px;
+  z-index: 0;
+  opacity: 0.15;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 50% 0%, transparent 55%, var(--gold) 56%, var(--gold) 57%, transparent 58%);
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+}
+
+/* ============================================
+   GLASSMORPHISM
+   ============================================ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 162, 122, 0.25);
+  box-shadow: 0 8px 32px rgba(75, 61, 51, 0.08);
+}
+
+.glass-nav {
+  background: rgba(252, 248, 243, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(198, 162, 122, 0.2);
+  box-shadow: 0 4px 24px rgba(75, 61, 51, 0.08);
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+.nav-link.active {
+  color: var(--gold);
+}
+
+/* Bottom Navigation */
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 9px;
+  letter-spacing: 0.03em;
+  color: rgba(75, 61, 51, 0.5);
+  padding: 6px 10px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.bottom-nav-item i {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+.bottom-nav-item.active {
+  color: var(--gold);
+  background: rgba(198, 162, 122, 0.12);
+}
+.bottom-nav-item.active i {
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   COUNTDOWN
+   ============================================ */
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(198, 162, 122, 0.25);
+  border-radius: 14px;
+  padding: 12px 4px;
+  box-shadow: 0 4px 16px rgba(75, 61, 51, 0.06);
+}
+
+/* ============================================
+   PROFILE CARD (MEMPELAI)
+   ============================================ */
+.profile-card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(198, 162, 122, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(75, 61, 51, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(75, 61, 51, 0.1);
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(198, 162, 122, 0.12);
+  color: var(--gold);
+  transition: all 0.3s ease;
+}
+.social-icon:hover {
+  background: var(--gold);
+  color: var(--cream);
+  transform: scale(1.1);
+}
+
+/* ============================================
+   TIMELINE (LOVE STORY)
+   ============================================ */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold), rgba(198, 162, 122, 0.15));
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.timeline-content {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(198, 162, 122, 0.18);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(75, 61, 51, 0.06);
+}
+
+/* ============================================
+   EVENT CARD (ACARA)
+   ============================================ */
+.event-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(198, 162, 122, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(75, 61, 51, 0.07);
+}
+.event-card p {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.6;
+}
+.event-card p i {
+  margin-top: 3px;
+}
+
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(198, 162, 122, 0.12);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.btn-maps {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--brown);
+  color: var(--cream);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 14px rgba(75, 61, 51, 0.15);
+  transition: all 0.3s ease;
+}
+.btn-maps:hover {
+  background: var(--gold);
+  box-shadow: 0 6px 18px rgba(198, 162, 122, 0.3);
+}
+.btn-maps:active {
+  transform: scale(0.96);
+}
+
+/* ============================================
+   GIFT CARD
+   ============================================ */
+.gift-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(198, 162, 122, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(75, 61, 51, 0.07);
+}
+
+.btn-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px;
+  border-radius: 999px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+.btn-copy:hover {
+  background: var(--gold);
+  color: var(--cream);
+}
+.btn-copy:active {
+  transform: scale(0.97);
+}
+.btn-copy.copied {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: var(--cream);
+}
+
+/* ============================================
+   FORM (RSVP)
+   ============================================ */
+.form-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(75, 61, 51, 0.6);
+  margin-bottom: 6px;
+}
+.form-input {
+  width: 100%;
+  padding: 11px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(198, 162, 122, 0.35);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--brown);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.form-input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(198, 162, 122, 0.15);
+}
+.form-input::placeholder {
+  color: rgba(75, 61, 51, 0.35);
+}
+
+/* ============================================
+   FLOATING BUTTONS
+   ============================================ */
+.floating-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brown);
+  color: var(--cream);
+  font-size: 18px;
+  box-shadow: 0 6px 18px rgba(75, 61, 51, 0.25);
+  transition: all 0.3s ease;
+}
+.floating-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 24px rgba(75, 61, 51, 0.3);
+}
+.floating-btn:active {
+  transform: scale(0.95);
+}
+.floating-btn.playing {
+  background: var(--sage);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.03); }
+}
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+[data-animate] {
+  opacity: 0;
+}
+[data-animate="fade-up"] {
+  animation: fadeUp 0.9s ease forwards;
+}
+[data-animate="fade-in"] {
+  animation: fadeIn 1s ease forwards;
+}
+[data-animate].in-view {
+  opacity: 0;
+}
+[data-animate].in-view[data-animate="fade-up"],
+[data-animate].animated {
+  animation-play-state: running;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+.animate-bounce-slow {
+  animation: bounceSlow 2s ease-in-out infinite;
+}
+
+/* Opening screen fade */
+#opening-screen {
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+#opening-screen.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Main content fade in */
+#main-content.show {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Toast */
+#toast.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 6px);
+}
+
+/* Scroll top button visible state */
+#scroll-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ============================================
+   RESPONSIVE FINE-TUNING
+   ============================================ */
+@media (max-width: 360px) {
+  .countdown-box span:first-child {
+    font-size: 1.25rem;
+  }
+  .profile-card, .event-card, .gift-card, .timeline-content {
+    padding: 20px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero {
+    padding-top: 8rem;
+  }
+  .glass-nav {
+    max-width: 720px;
+  }
+}
